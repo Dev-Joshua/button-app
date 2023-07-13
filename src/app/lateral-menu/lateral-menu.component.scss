@@ -1,0 +1,38 @@
+.section-container {
+  display: flex;
+
+  .container > div:nth-child(1) {
+    margin-top: 150px;
+  }
+  .container > div:nth-child(5) {
+    .col {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  .menu {
+    background: #fafbfd;
+    width: 20%;
+    height: 100vh;
+    z-index: -1;
+
+    .row {
+      margin-top: 30px;
+      margin-left: 15px;
+
+      div {
+        color: #9e9e9e;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+  }
+
+  .container-buttons {
+    margin: 50px 0 0 20px;
+    width: 100%;
+  }
+}
