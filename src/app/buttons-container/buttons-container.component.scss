@@ -1,17 +1,32 @@
 .container-buttons {
-  .col p {
-    font-family: "Ubuntu Mono", monospace;
-    font-size: 13px;
+  .row {
+    align-items: flex-end;
   }
   .col {
+    margin-top: 50px;
     position: relative;
+    p {
+      margin: 0 0 5px 0;
+      font-family: "Ubuntu Mono", monospace;
+      font-size: 13px;
+    }
     i {
       position: absolute;
       bottom: 9px;
-      left: 15px;
+      left: 25px;
     }
-    i:hover {
-      color: #3d5afe;
-    }
+  }
+}
+
+.btnCart:focus .col i {
+  position: absolute;
+  right: 5px;
+  left: unset;
+}
+
+.author {
+  margin-top: 80px;
+  a {
+    font-weight: bold;
   }
 }

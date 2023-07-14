@@ -7,79 +7,84 @@
     </div>
   </div> -->
   <div class="row">
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[0] }}</p>
       <app-button></app-button>
     </div>
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[1] }}</p>
-      <app-button></app-button>
+      <app-button [bgDefault]="true"></app-button>
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[2] }}</p>
       <app-button [outline]="true"></app-button>
     </div>
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[3] }}</p>
-      <app-button [outline]="true"></app-button>
+      <app-button [bgOutline]="true"></app-button>
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[4] }}</p>
       <app-button [onlyText]="true"></app-button>
     </div>
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[5] }}</p>
-      <app-button [onlyText]="true"></app-button>
+      <app-button [bgOnlyTxt]="true"></app-button>
     </div>
   </div>
 
   <div class="row">
     <div class="col">
       <p>{{ array_strings[6] }}</p>
-      <app-button [disableShadow]="true"></app-button>
+      <app-button [disableShadow]="true" [disabled]="disableBtn"></app-button>
+      <input
+        style="margin-left: 30px"
+        type="checkbox"
+        [(ngModel)]="disableBtn"
+      />
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[7] }}</p>
       <app-button [disabled]="true"></app-button>
     </div>
-    <div class="col">
+    <div class="col col-4">
       <p>{{ array_strings[8] }}</p>
       <app-button [disableOnlyTxt]="true"></app-button>
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col col-5">
       <p>{{ array_strings[9] }}</p>
-      <i class="fa-solid fa-cart-shopping" style="color: #ffff"></i>
+      <i class="cart fa-solid fa-cart-shopping" style="color: #ffff"></i>
       <app-button [btnIcon]="true"></app-button>
     </div>
-    <div class="col">
+    <div class="col col-5">
       <p>{{ array_strings[10] }}</p>
-      <i class="fa-solid fa-cart-shopping" style="color: #ffff"></i>
-      <app-button [btnIcon]="true"></app-button>
+      <i class="fa-solid fa-cart-shopping" style="color: #ffff; left: 85px"></i>
+      <app-button [btnIconEnd]="true" btn></app-button>
     </div>
   </div>
 
   <div class="row">
-    <div class="col">
+    <div class="col col-3">
       <p>{{ array_strings[11] }}</p>
       <app-button [sm]="true"></app-button>
     </div>
-    <div class="col">
+    <div class="col col-3">
       <p>{{ array_strings[12] }}</p>
       <app-button [md]="true"></app-button>
     </div>
-    <div class="col">
+    <div class="col col-3">
       <p>{{ array_strings[13] }}</p>
       <app-button [lg]="true"></app-button>
     </div>
@@ -110,16 +115,19 @@
       <app-button [bgDefault]="true"></app-button>
     </div>
     <div class="col">
-      <p>''</p>
       <app-button [primary]="true"></app-button>
     </div>
     <div class="col">
-      <p>''</p>
       <app-button [secondary]="true"></app-button>
     </div>
     <div class="col">
-      <p>''</p>
       <app-button [danger]="true"></app-button>
     </div>
   </div>
+</section>
+<section class="author">
+  <p>
+    Created by <a href="https://github.com/Dev-Joshua">Dev-Joshua</a> -
+    devChallenge.io
+  </p>
 </section>

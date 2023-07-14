@@ -12,6 +12,7 @@ export class ButtonComponent {
   @Input() disableShadow: boolean = false;
   @Input() disableOnlyTxt: boolean = false;
   @Input() btnIcon: boolean = false;
+  @Input() btnIconEnd: boolean = false;
   @Input() sm: boolean = false;
   @Input() md: boolean = false;
   @Input() lg: boolean = false;
@@ -22,4 +23,6 @@ export class ButtonComponent {
   @Input() bgPrimary: boolean = false;
   @Input() bgSecondary: boolean = false;
   @Input() bgDanger: boolean = false;
+  @Input() bgOutline: boolean = false;
+  @Input() bgOnlyTxt: boolean = false;
 }

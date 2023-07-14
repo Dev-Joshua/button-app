@@ -10,23 +10,12 @@ button {
   height: 36px;
   background-color: #e0e0e0;
   font-weight: 500;
+  color: #3f3f3f;
 }
-.primary {
-  background-color: #0039cb;
-  color: #fff;
-}
-.secondary {
-  background-color: #1c313a;
-  color: #fff;
-}
-.danger {
-  background-color: #9a0007;
-  color: #fff;
-}
-
 .default:hover,
 .default:focus {
   background-color: #aeaeae;
+  cursor: pointer;
 }
 
 .outline {
@@ -36,12 +25,26 @@ button {
   color: #3d5afe;
   background-color: transparent;
 }
-
 .outline:hover,
 .outline:focus {
   border-radius: 6px;
   border: 1px solid #3d5afe;
   background: rgba(41, 98, 255, 0.1);
+  cursor: pointer;
+}
+
+.bgOutline {
+  border-radius: 6px;
+  width: 88px;
+  height: 36px;
+  border: 1px solid #3d5afe;
+  color: #3d5afe;
+  background: rgba(41, 98, 255, 0.1);
+}
+.bgOutline:hover,
+.bgOutline:focus {
+  background: rgba(41, 98, 255, 0.1);
+  cursor: default;
 }
 
 .onlyText {
@@ -51,13 +54,22 @@ button {
   background-color: transparent;
   border: none;
 }
-
 .onlyText:hover,
-.onlyText:focus,
-.onlyText.on-hover,
-.onlyText.on-focus {
+.onlyText:focus {
   border-radius: 6px;
   background: rgba(41, 98, 255, 0.1);
+  cursor: pointer;
+}
+
+.bgOnlyTxt {
+  border-radius: 6px;
+  background: rgba(41, 98, 255, 0.1);
+  color: #3d5afe;
+}
+.bgOnlyTxt:hover,
+.bgOnlyTxt:focus {
+  background: rgba(41, 98, 255, 0.1);
+  cursor: default;
 }
 
 .disableShadow {
@@ -66,8 +78,11 @@ button {
   border-radius: 6px;
   background-color: #3d5afe;
   color: #ffffff;
-  box-shadow: 0px 2px 3px 0px #33333333;
+  box-shadow: 0px 2px 5px 0px #33333333;
   border: none;
+}
+.disableShadow:hover {
+  background-color: #3d5afe;
 }
 
 .disabled {
@@ -85,10 +100,11 @@ button {
 }
 .disableOnlyTxt:hover {
   background-color: transparent;
-  border: none;
+  cursor: default;
 }
 
 .btnIcon {
+  padding-left: 35px;
   width: 105px;
   height: 36px;
   border-radius: 6px;
@@ -98,12 +114,31 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  text-align: end;
 }
+.btnIcon:focus,
 .btnIcon:hover {
+  background-color: #3d5afe;
+  color: #ffffff;
+  cursor: default;
+}
+
+.btnIconEnd {
+  width: 105px;
+  height: 36px;
   border-radius: 6px;
+  background-color: #3d5afe;
+  color: #ffffff;
   border: none;
-  background-color: #5f77ffb9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 35px;
+}
+.btnIconEnd:hover,
+.btnIconEnd:focus {
+  background-color: #3d5afe;
+  color: #ffffff;
+  cursor: default;
 }
 
 .sm {
@@ -126,7 +161,10 @@ button {
 
 .bgDefault {
   background-color: #aeaeae;
-  color: #fff;
+  color: #3f3f3f;
+}
+.bgDefault:hover {
+  cursor: default;
 }
 
 .bgPrimary {
@@ -157,4 +195,32 @@ button {
 .bgDanger:hover,
 .bgDanger:focus {
   background-color: #9a0007;
+}
+
+.primary {
+  background-color: #0039cb;
+  color: #fff;
+}
+.primary:hover {
+  background-color: #0039cb;
+  color: #fff;
+  cursor: default;
+}
+.secondary {
+  background-color: #1c313a;
+  color: #fff;
+}
+.secondary:hover {
+  background-color: #1c313a;
+  color: #fff;
+  cursor: default;
+}
+.danger {
+  background-color: #9a0007;
+  color: #fff;
+}
+.danger:hover {
+  background-color: #9a0007;
+  color: #fff;
+  cursor: default;
 }

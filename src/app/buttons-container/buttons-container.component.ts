@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-buttons-container',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./buttons-container.component.scss'],
 })
 export class ButtonsContainerComponent {
+  @Input() disableBtn: boolean = false;
+  @Input() btnCart: boolean = false;
+
   array_strings: string[] = [
     '<Button />',
     '&:hover, &:focus',
@@ -27,4 +30,9 @@ export class ButtonsContainerComponent {
     '<Button color="danger" />',
     '&:hover, &:focus',
   ];
+
+  handleFocus() {
+    const iconCart = document.querySelector('.cart');
+    iconCart?.classList.add('btnCart');
+  }
 }
