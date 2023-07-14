@@ -1,0 +1,160 @@
+button {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 81px;
+  height: 36px;
+}
+
+.default {
+  width: 81px;
+  height: 36px;
+  background-color: #e0e0e0;
+  font-weight: 500;
+}
+.primary {
+  background-color: #0039cb;
+  color: #fff;
+}
+.secondary {
+  background-color: #1c313a;
+  color: #fff;
+}
+.danger {
+  background-color: #9a0007;
+  color: #fff;
+}
+
+.default:hover,
+.default:focus {
+  background-color: #aeaeae;
+}
+
+.outline {
+  width: 88px;
+  height: 36px;
+  border: 1px solid #3d5afe;
+  color: #3d5afe;
+  background-color: transparent;
+}
+
+.outline:hover,
+.outline:focus {
+  border-radius: 6px;
+  border: 1px solid #3d5afe;
+  background: rgba(41, 98, 255, 0.1);
+}
+
+.onlyText {
+  width: 88px;
+  height: 36px;
+  color: #3d5afe;
+  background-color: transparent;
+  border: none;
+}
+
+.onlyText:hover,
+.onlyText:focus,
+.onlyText.on-hover,
+.onlyText.on-focus {
+  border-radius: 6px;
+  background: rgba(41, 98, 255, 0.1);
+}
+
+.disableShadow {
+  width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #3d5afe;
+  color: #ffffff;
+  box-shadow: 0px 2px 3px 0px #33333333;
+  border: none;
+}
+
+.disabled {
+  width: 81px;
+  height: 36px;
+  border-radius: 6px;
+  border: none;
+  background-color: #e0e0e0;
+  color: #9e9e9e;
+}
+
+.disableOnlyTxt {
+  background-color: transparent;
+  color: #9e9e9e;
+}
+.disableOnlyTxt:hover {
+  background-color: transparent;
+  border: none;
+}
+
+.btnIcon {
+  width: 105px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #3d5afe;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: end;
+}
+.btnIcon:hover {
+  border-radius: 6px;
+  border: none;
+  background-color: #5f77ffb9;
+}
+
+.sm {
+  font-size: 12px;
+  width: 73px;
+  height: 32px;
+}
+
+.md {
+  font-size: 14px;
+  width: 81px;
+  height: 36px;
+}
+
+.lg {
+  font-size: 16px;
+  width: 93px;
+  height: 42px;
+}
+
+.bgDefault {
+  background-color: #aeaeae;
+  color: #fff;
+}
+
+.bgPrimary {
+  background-color: #2962ff;
+  color: #fff;
+}
+
+.bgSecondary {
+  background-color: #455a64;
+  color: #fff;
+}
+
+.bgDanger {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.bgPrimary:hover,
+.bgPrimary:focus {
+  background-color: #0039cb;
+}
+
+.bgSecondary:hover,
+.bgSecondary:focus {
+  background-color: #1c313a;
+}
+
+.bgDanger:hover,
+.bgDanger:focus {
+  background-color: #9a0007;
+}

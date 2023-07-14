@@ -1,0 +1,17 @@
+.container-buttons {
+  .col p {
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 13px;
+  }
+  .col {
+    position: relative;
+    i {
+      position: absolute;
+      bottom: 9px;
+      left: 15px;
+    }
+    i:hover {
+      color: #3d5afe;
+    }
+  }
+}

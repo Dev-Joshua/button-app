@@ -1,6 +1,24 @@
 <button
-  class="btn btn-primary"
-  [ngClass]="{ button: true, outline: outline, disabled: disabled }"
+  class="btn default"
+  [ngClass]="{
+    button: true,
+    outline: outline,
+    disabled: disabled,
+    onlyText: onlyText,
+    disableShadow: disableShadow,
+    disableOnlyTxt: disableOnlyTxt,
+    btnIcon: btnIcon,
+    sm: sm,
+    md: md,
+    lg: lg,
+    primary: primary,
+    secondary: secondary,
+    danger: danger,
+    bgDefault: bgDefault,
+    bgPrimary: bgPrimary,
+    bgSecondary: bgSecondary,
+    bgDanger: bgDanger
+  }"
   [disabled]="disabled"
 >
   Default

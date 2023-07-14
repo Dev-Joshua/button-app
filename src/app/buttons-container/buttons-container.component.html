@@ -1,0 +1,125 @@
+<h1 style="font-size: 30px">Buttons</h1>
+<section class="container-buttons">
+  <!-- <div class="row">
+    <div class="col-5" *ngFor="let item of array_strings">
+      <p>{{ item }}</p>
+      <app-button></app-button>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[0] }}</p>
+      <app-button></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[1] }}</p>
+      <app-button></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[2] }}</p>
+      <app-button [outline]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[3] }}</p>
+      <app-button [outline]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[4] }}</p>
+      <app-button [onlyText]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[5] }}</p>
+      <app-button [onlyText]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[6] }}</p>
+      <app-button [disableShadow]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[7] }}</p>
+      <app-button [disabled]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[8] }}</p>
+      <app-button [disableOnlyTxt]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[9] }}</p>
+      <i class="fa-solid fa-cart-shopping" style="color: #ffff"></i>
+      <app-button [btnIcon]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[10] }}</p>
+      <i class="fa-solid fa-cart-shopping" style="color: #ffff"></i>
+      <app-button [btnIcon]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[11] }}</p>
+      <app-button [sm]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[12] }}</p>
+      <app-button [md]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[13] }}</p>
+      <app-button [lg]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[14] }}</p>
+      <app-button></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[15] }}</p>
+      <app-button [bgPrimary]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[16] }}</p>
+      <app-button [bgSecondary]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>{{ array_strings[17] }}</p>
+      <app-button [bgDanger]="true"></app-button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>{{ array_strings[18] }}</p>
+      <app-button [bgDefault]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>''</p>
+      <app-button [primary]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>''</p>
+      <app-button [secondary]="true"></app-button>
+    </div>
+    <div class="col">
+      <p>''</p>
+      <app-button [danger]="true"></app-button>
+    </div>
+  </div>
+</section>
