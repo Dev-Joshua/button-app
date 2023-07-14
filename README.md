@@ -31,7 +31,6 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [How To Use](#how-to-use)
-- [Acknowledgements](#acknowledgements)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
@@ -99,16 +98,7 @@ $ ng serve -o
 
 Remember to also install bootstrap and fontawesome to complement the styles.
 
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [your-website.com](https://dev-joshua.github.io/Portafolio/)
+- GitHub [@your-username](https://github.com/Dev-Joshua)
