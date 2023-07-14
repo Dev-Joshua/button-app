@@ -100,5 +100,5 @@ Remember to also install bootstrap and fontawesome to complement the styles.
 
 ## Contact
 
-- Website [your-website.com](https://dev-joshua.github.io/Portafolio/)
-- GitHub [@your-username](https://github.com/Dev-Joshua)
+- Website [Portafolio](https://dev-joshua.github.io/Portafolio/)
+- GitHub [@Dev-Joshua](https://github.com/Dev-Joshua)
